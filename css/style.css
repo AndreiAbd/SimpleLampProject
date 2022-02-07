@@ -1,0 +1,114 @@
+* > button{
+    cursor: pointer;
+}
+body{
+    background-color: rgb(44, 44, 44);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header > h1{
+    text-align: center;
+    cursor:not-allowed;
+}
+.sourcesDetails > a{
+    text-decoration: none;
+    justify-content: center;
+}
+.sourcesDetails span{
+    color: red;
+    font-weight: bold;
+    cursor:not-allowed;
+}
+.sourcesDetails summary{
+    color: yellowgreen;
+    cursor: pointer;
+}
+.M2{
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.M2 > section{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+.s2{
+    border:solid 3px lightslategray;
+}
+section > header{
+    background-color: rgb(22, 22, 22);
+    padding: 10px;
+    border-radius: 5px;
+}
+.s1{
+    border-radius: 5px;
+    border:solid 3px lightslategray;
+    text-align: center;
+}
+.s1 button{
+    padding: 5px;
+    margin: 10px;
+    width: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+    color: yellowgreen;
+    border:solid 3px yellowgreen;
+    border-radius: 5px;
+    font-size: large;
+}
+.s1 button:hover{
+    background-color: yellowgreen;
+    color: #000;
+    font-size: medium;
+    border-radius: 5px;
+    width: 50px;
+}
+.textMain > span{
+    color: yellowgreen;
+}
+.l0{
+    display: block;
+    margin: auto;
+    cursor: none;
+}
+.l1{
+    display: none;
+    margin: auto;
+    cursor: none;
+}
+footer a{
+    color: yellowgreen;
+    text-decoration: none;
+}
+.wordLamp {
+    animation-name: scale;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    text-shadow: 0px 0px 10px yellow;
+    }    
+@keyframes scale {
+    0% {
+    opacity: 0.5;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1.5;
+    }
+    75% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.codeSection {
+    background-color: #000;
+    color: #fff;
+    cursor: text;
+}
