@@ -49,4 +49,6 @@ var downloadTimer = setInterval(function(){
   timeleft -= 1;
 }, 1000);
 }
-
+//Get Current Year
+const d = new Date();
+document.getElementById("getCurrentYear").innerHTML = d.getFullYear()
