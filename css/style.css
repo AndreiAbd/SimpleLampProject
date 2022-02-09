@@ -1,9 +1,9 @@
-/* Powered | CoderX ©2021 | Andrei Abd
+/*
+Powered : CoderX | Andrei Abd
 █▀▀ █▀█ █▀▄ █▀▀ █▀█ ▀▄▀
 █▄▄ █▄█ █▄▀ ██▄ █▀▄ █░█
 CODER X |تم تصميم الموقع و برمجته من قبل اندريه عبد
 mail      :  usr.g0a1@gmial.com
-CoderX    :  https://coderx-project.blogspot.com/
 Whatsapp  :  +963934820511
 Pinterest :  https://www.pinterest.com/andreiabd93/
 Instagram :  https://www.instagram.com/andrei_abd/
@@ -11,98 +11,27 @@ Linkeden  :  https://www.linkedin.com/in/andreiabd
 Facebook  :  https://www.facebook.com/andreiaabd/
 Github    :  https://github.com/AndreiAbd
 */
-* > button{
-    cursor: pointer;
+
+body {
+    background-color: #333;
+    font-family: fantasy;
 }
-body{
-    background-color: rgb(44, 44, 44);
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-header > h1{
-    text-align: center;
-    cursor:not-allowed;
-}
-.sourcesDetails > a{
-    text-decoration: none;
-    justify-content: center;
-}
-.sourcesDetails span{
-    color: red;
-    font-weight: bold;
-    cursor:not-allowed;
-}
-.sourcesDetails summary{
-    color: yellowgreen;
-    cursor: pointer;
-}
-.M2{
-    background-color: black;
-    border-radius: 5px;
-    padding: 10px;
-}
-.M2 > section{
-    width: 50%;
-    margin: auto;
-    padding: 10px;
-}
-.s2{
-    border:solid 3px lightslategray;
-}
-section > header{
-    background-color: rgb(22, 22, 22);
-    padding: 10px;
-    border-radius: 5px;
-}
-.s1{
-    border-radius: 5px;
-    border:solid 3px lightslategray;
-    text-align: center;
-}
-.s1 button{
+
+header>h4 {
     padding: 5px;
-    margin: 10px;
-    width: 70px;
-    background-color: rgba(0, 0, 0, 0);
-    font-weight: bold;
-    color: yellowgreen;
-    border:solid 3px yellowgreen;
-    border-radius: 5px;
-    font-size: large;
+    color: rgb(184, 184, 184);
 }
-.s1 button:hover{
-    background-color: yellowgreen;
-    color: #000;
-    font-size: medium;
-    border-radius: 5px;
-    width: 50px;
-}
-.textMain > span{
-    color: yellowgreen;
-}
-.l0{
-    display: block;
-    margin: auto;
-    cursor: none;
-}
-.l1{
-    display: none;
-    margin: auto;
-    cursor: none;
-}
-footer a{
-    color: yellowgreen;
-    text-decoration: none;
-}
-.wordLamp {
+
+header>h4 {
     animation-name: scale;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    text-shadow: 0px 0px 10px yellow;
-    }    
+    text-shadow: 0px 0px 10px #000;
+}
+
 @keyframes scale {
     0% {
-    opacity: 0.5;
+        opacity: 0.5;
     }
     25% {
         opacity: 1;
@@ -120,8 +49,142 @@ footer a{
         opacity: 0;
     }
 }
-.codeSection {
-    background-color: #000;
+
+.span0 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+main>section>h3,
+.projectCard,
+main>section>p,
+main>section>details,
+footer {
     color: #fff;
-    cursor: text;
+    padding: 5px;
+}
+
+.projectCardHeader:hover {
+    background-color: #777;
+    color: #000;
+}
+
+.projectCard>details>button>a {
+    padding: 7px;
+    color: greenyellow;
+}
+
+.projectCard>details>button>a:hover,
+.projectCard>button>a:hover {
+    color: #000;
+}
+
+.projectCard>details>button:hover,
+.projectCard>button:hover {
+    background-color: greenyellow;
+    width: 12%;
+    color: #000;
+}
+
+.projectCard>button {
+    margin: 15px;
+}
+
+.projectCard>details>button,
+.projectCard>button {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid greenyellow;
+    border-radius: 3px;
+}
+
+.span1 {
+    font-weight: bold;
+    color: tomato;
+}
+
+.projectCard>details>button>a,
+.projectCard>button>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.projectCard {
+    margin: auto;
+    background-color: #111;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 90%;
+    border: solid 1px #fff;
+    box-shadow: 0px 0px 6px #000;
+}
+
+.projectCard>code,
+.projectCard>details {
+    padding: 20px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: large;
+    color: #fff;
+}
+
+.gitCloneCode {
+    background-color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px #fff;
+}
+
+
+/*Loader*/
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader.hidden {
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.logo-loader {
+    animation-name: scale2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scale2 {
+    0% {
+        opacity: 0.5;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1.5;
+    }
+    75% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
 }
