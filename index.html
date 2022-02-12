@@ -14,6 +14,7 @@ Github    :  https://github.com/AndreiAbd
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="png/00_icon">
@@ -22,6 +23,7 @@ Github    :  https://github.com/AndreiAbd
     <link rel="stylesheet" href="css/style.css">
     <title>Lamp Project!</title>
 </head>
+
 <body oncontextmenu="return false">
     <header>
         <h1 title="Welcome Visitor!">
@@ -36,16 +38,13 @@ Github    :  https://github.com/AndreiAbd
                     <h3 title="Introduction">About Project:</h3>
                     <p title="About Project" class="textMain">
                         this simple project designed by <span>HTML</span> - <span>CSS</span>, And programing language <span>JavaScript.</span>
-                        <br>
-                        Just with simple click!, To turn the light ON or turn it OFF, And it's turned OFF automaticly after 10 sec.
+                        <br> Just with simple click!, To turn the light ON or turn it OFF, And it's turned OFF automaticly after 10 sec.
                     </p>
                     <details class="sourcesDetails">
                         <summary title="Click">Sources</summary>
                         <p title="Source text">
-                            <span>We disable source list view on this project!</span><br><hr>
-                            If you want to download all files feel free to click the  link below and download all 
-                            HTML, Styles, Scripts, and IMG, ICO folders.<br>
-                            We use Github site for any branch with any project by CoderX.
+                            <span>We disable source list view on this project!</span><br>
+                            <hr> If you want to download all files feel free to click the link below and download all HTML, Styles, Scripts, and IMG, ICO folders.<br> We use Github site for any branch with any project by CoderX.
                         </p>
                         <a href="https://github.com/AndreiAbd/SimpleLampProject/archive/refs/heads/main.zip" title="Download Source File">
                             <button>Download Files</button>
@@ -60,11 +59,12 @@ Github    :  https://github.com/AndreiAbd
                 <main class="M2">
                     <!--Section One Buttoms With Functions-->
                     <section title="S1" class="s1">
-                        <p title="Controls"><b>CONTROL PANEL</b><p>
-                        <hr>
-                        <button onclick="lightOn()" title="Click To Turn Light ON">ON</button>
-                        <button onclick="lightOff()" title="Click To Turn Light OFF">OFF</button>
-                        <div id="countdown"></div>
+                        <p title="Controls"><b>CONTROL PANEL</b>
+                            <p>
+                                <hr>
+                                <button onclick="lightOn()" title="Click To Turn Light ON">ON</button>
+                                <button onclick="lightOff()" title="Click To Turn Light OFF">OFF</button>
+                                <div id="countdown"></div>
                     </section>
                     <!--Section Two IMAGES-->
                     <section title="S2" class="s2">
@@ -72,12 +72,20 @@ Github    :  https://github.com/AndreiAbd
                         <img src="png/01.png" alt="Lamp With Light" width="37%" height="auto" class="l1" id="l1">
                     </section>
                 </main>
-                <footer><!----></footer>
+                <footer>
+                    <!---->
+                </footer>
             </section>
         </div>
     </main>
     <noscript>Sorry! your Browser dosen't support JavaScript!</noscript>
     <hr>
+    <!--Loader Page-->
+    <div class="loader">
+        <div class="logo-loader">
+            <img src="png/00_icon_png.png" width="150px" height="150px" />
+        </div>
+    </div>
     <footer>
         <ul title="Information">
             <li>By Andrei Abd | CoderX ©1993 - <span id="getCurrentYear"></span></li>
@@ -104,6 +112,7 @@ Github    :  https://github.com/AndreiAbd
         <hr>
     </footer>
     <script src="js/script.js"></script>
-        
+
 </body>
+
 </html>
